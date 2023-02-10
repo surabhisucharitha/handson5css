@@ -1,0 +1,425 @@
+.margin{
+   margin:0px;
+   background-color: gold;
+}
+.parent{
+   display:flex;
+   top:50px;
+   color:black;
+   text-align:center;
+   flex-direction:column;
+   font-size:20px;
+   font-style:italic;
+}
+.box{
+   margin:auto;
+   top:10px;
+   text-align:center;
+   
+}
+.parent1{
+   display:flex;
+   width:400px;
+   height:150px;
+   top:20px;
+   justify-content:space-between;
+}
+@keyframes boxa{
+   0%{
+      transform:skewX(0deg);
+   }
+   50%{
+      transform:skewX(45deg);
+   }
+   100%{
+      transform:skewX(-45deg);
+   }
+}
+.box1{
+    animation-name:boxa;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+    background-color:darkslategray;
+    width:100px;
+    height:100px;
+}
+.parent2{
+   display:flex;
+   width:400px;
+   height:150px;
+   justify-content:space-between;
+}
+@keyframes boxb{
+   0%{
+      transform:skewY(0deg);
+   }
+   50%{
+      transform:skewY(45deg);
+   }
+   100%{
+      transfom:skewY(-45deg);
+   }
+
+}
+.box2{
+   animation-name:boxb;
+   animation-duration:2s;
+   animation-iteration-count:infinite;
+   animation-direction: alternate;
+   background-color:violet;
+   width:100px;
+   height:100px;
+}
+.parent3{
+   display:flex;
+   width:400px;
+   height:150px;
+   justify-content:space-between;
+}
+@keyframes boxc{
+   0%{
+      transform:rotate(0deg);
+   }
+   100%{
+      transform:rotate(360deg);
+   }
+}
+.box3{
+    animation-name:boxc;
+    animation-duration:2s;
+    animation-iteration-count:infinite; 
+    background-color:darkslategray;
+    width:100px;
+   height:100px;
+}
+.parent4{
+   display:flex;
+   width:400px;
+   height:150px;
+   justify-content:space-between;
+}
+@keyframes boxd{
+   0%{
+      transform: scaleY(1);
+  }
+  100%{
+      transform: scaleY(1.5);
+
+  }
+}
+.box4{
+    animation-name:boxd;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+    background-color:darkslategray;
+    width:100px;
+   height:100px;
+}
+@keyframes boxe{
+   0%{
+       transform:scaleX(0.5);
+   }
+   100%{
+      transform:scaleX(1.5);
+   }
+}
+.box5{
+   animation-name:boxe;
+   animation-duration:2s;
+   animation-iteration-count:infinite;
+   background-color:brown; 
+   width:100px;
+   height:100px; 
+}
+@keyframes boxf{
+   0%{
+      transform:rotate(0deg);
+   }
+  
+   100%{
+      transform:rotate(100deg);
+   }
+}
+.box6{
+   animation-name:boxf;
+   animation-duration:2s;
+   animation-iteration-count:infinite;
+   background-color:green; 
+   width:100px;
+   height:100px;
+   animation-direction: alternate;
+}
+
+
+.trans{
+   color:black;
+   text-decoration:underline;
+   font-size:20px;
+
+   font-style:italic;
+   text-align: center;
+}
+.parent5{
+   color:black;
+   display:flex;
+   height:1000px;
+   text-align:center;
+   flex-direction:column;
+   font-size:20px;
+   font-style:italic;
+}
+.boxM{
+  
+   text-align:center; 
+   top:100px;
+   margin:auto;
+   flex-direction: column;
+   display:flex;
+   
+   align-items: center;
+}
+.boxs1{
+   transition:width 5s;
+   transition-timing-function:linear;
+     width:100px;
+     height:100px;
+     flex-direction: column;
+   display:flex;
+   border:2px solid grey;
+   background-color:lightgreen; 
+}
+.boxs1:hover{
+     width:500px;
+}
+.boxs2{
+   transition:width 5s,height 5s,;
+   transition-timing-function: ease-out;
+   width:100px;
+   height:100px;
+   flex-direction: column;
+   display:flex;
+   border:2px solid grey;
+   background-color:lightgreen; 
+}
+.boxs2:hover{
+   height:500px;
+   width:500px;
+}
+.boxs3{
+   transition-timing-function: linear;
+   transition:width 5s;
+   width:100px;
+   height:100px;
+   flex-direction: column;
+   display:flex;
+   border:2px solid grey;
+   background-color:lightgreen; 
+}
+.boxs3:hover{
+   width:500px;
+
+}
+.boxs4{
+   transition-timing-function: ease;
+   transition:width 5s;
+   width:100px;
+   height:100px;
+   flex-direction: column;
+   display:flex;
+   border:2px solid grey;
+   background-color:lightgreen; 
+
+}
+.boxs4:hover{
+   width:500px;
+}
+.boxs5{
+   transition-timing-function: ease-in;
+   transition:width 2s;
+    width:100px;
+    height:100px;
+    flex-direction: column;
+   display:flex;
+   border:2px solid grey;
+   background-color:lightgreen; 
+}
+.boxs5:hover{
+   width:500px;
+}
+.boxs6{
+   transition-timing-function: ease-out;
+   transition:width 2s;
+    width:100px;
+    height:100px;
+    flex-direction: column;
+   display:flex;
+   border:2px solid grey;
+   background-color:lightgreen; 
+}
+.boxs6:hover{
+   width:500px;
+}
+.boxs7{
+   transition-timing-function: ease-in-out;
+   transition:width 2s;
+    width:100px;
+    height:100px;
+    flex-direction: column;
+   display:flex;
+   border:2px solid grey;
+   background-color:lightgreen; 
+}
+.boxs7:hover{
+   width:500px;
+}
+.back{
+   color:black;
+   text-decoration:underline;
+   font-size:20px;
+   font-style:italic;
+   text-align: center;
+
+}
+.next{
+   color:black;
+   text-decoration:underline;
+   font-size:20px;
+   font-style:italic;
+   text-align:center;
+
+}
+.animatiom{
+   margin:auto;
+   overflow-x: hidden;
+   width: 100%;
+   height: 700px;
+   border-left: 10px orange solid;
+   border-right: 10px solid green;
+   box-sizing: border-box;
+   position: relative;
+}
+ .sky{
+   width: 100%;
+   height: 600px;
+   background-image: url(./sky.jpg);
+   
+   background-repeat: no-repeat;
+   position: relative;
+   z-index: -3;
+}
+.road{
+   background-image: url(./road.jpg);
+   position: absolute;
+   z-index: -1;
+   bottom: 0px;
+   width: 600%;
+   height: 250px;
+   animation-name: road;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+   background-repeat: repeat-x;
+   animation-timing-function: linear;
+  
+}
+@keyframes road {
+   0%{
+       transform: translateX(0);
+   }
+   100%{
+       transform: translateX(-1000px);
+   }
+
+}
+
+.city{
+   height: 240px;
+   width: 600%;
+   background-image: url(./city.png);
+   background-repeat: repeat-x;
+   position: absolute;
+   bottom: 249px;
+   display: block;
+   z-index: 1;
+   animation: city;
+   animation-duration: 50s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+@keyframes city{
+   100%{
+       transform:translateX(-3400px);
+   }
+}
+.sun{
+   width: 50px;
+   z-index: 1;
+   float: right;
+   position: absolute;
+   top: 30px;
+   right: 80px;
+   animation-name: sun;
+   animation-duration: 15s;
+   animation-iteration-count: infinite;
+}
+@keyframes sun {
+   100%{
+       transform: translateX(-300px);
+   }
+}
+.car img{
+   width: 250px;
+   position: absolute;
+   left: 30%;
+   bottom: 145px;
+   z-index: 1;
+   animation-name: car;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+}
+@keyframes car {
+   50%{
+       transform: translateY(2px);
+   }
+   100%{
+       transform: translateY(-2px);
+   }
+}
+
+.wheel1 img{
+   width: 50px;
+   position: absolute;
+   left: 480px;
+   bottom: 145px;
+   animation-name: wheel;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+@keyframes wheel {
+   0%{
+       transform: rotate(0deg);
+   }
+   100%{
+       transform: rotate(360deg);
+   }
+   
+}
+.wheel2 img{
+   width: 50px;
+   position: absolute;
+   left: 630px;
+ bottom: 145px;
+   animation-name: wheel;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+.flag{
+   position: absolute;
+   left: 620px;
+
+   bottom: 195px;
+   width: 100px;
+   z-index: 1;
+}
+  
